@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FragmentClockWorking">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="477dp"
+            android:background="@mipmap/studying"
+            android:gravity="center">
+
+            <LinearLayout
+                android:layout_width="439dp"
+                android:layout_height="183dp"
+                android:alpha="0.5"
+                android:gravity="center">
+
+                <EditText
+                    android:id="@+id/tv_countdown_minute"
+                    android:layout_width="150dp"
+                    android:layout_height="215dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="32dp"
+                    android:layout_marginBottom="32dp"
+                    android:background="@color/white"
+                    android:text="00"
+                    android:textAlignment="center"
+                    android:textColor="@android:color/black"
+                    android:textSize="80dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="183dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="32dp"
+                    android:layout_marginBottom="32dp"
+                    android:text=" : "
+                    android:textAlignment="center"
+                    android:textColor="@android:color/black"
+                    android:textSize="110dp" />
+
+                <EditText
+                    android:id="@+id/tv_countdown_second"
+                    android:layout_width="150dp"
+                    android:layout_height="215dp"
+                    android:layout_marginTop="32dp"
+                    android:layout_marginBottom="32dp"
+                    android:background="@color/white"
+                    android:gravity="center"
+                    android:text="10"
+                    android:textAlignment="center"
+                    android:textColor="@android:color/black"
+                    android:textSize="80dp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center">
+            <Button
+                android:id="@+id/btStop"
+                android:layout_width="150sp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="20sp"
+                android:text="停止" />
+            <Button
+                android:id="@+id/btBack"
+                android:layout_width="150sp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20sp"
+                android:text="取消" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+</FrameLayout>

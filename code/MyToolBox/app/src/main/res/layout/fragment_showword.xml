@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FragmentShowword">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <RelativeLayout
+            android:id="@+id/rl_listview"
+            android:layout_width="match_parent"
+            android:layout_height="550sp"
+            android:layout_weight="6">
+            <ListView
+                android:id="@+id/lv_words"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+            <TextView
+                android:id="@+id/tv_translation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:visibility="gone"/>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_back"
+            android:layout_width="match_parent"
+            android:layout_height="60sp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="100sp"
+                android:layout_height="match_parent"
+                android:src="@mipmap/newclock" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+</FrameLayout>

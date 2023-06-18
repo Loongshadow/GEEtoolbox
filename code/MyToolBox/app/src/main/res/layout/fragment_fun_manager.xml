@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FragmentFunManager">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <!-- TODO: item1 countdown -->
+        <!--item的上分割线-->
+        <View
+            android:id="@+id/divider_top1"
+            android:layout_width="fill_parent"
+            android:layout_height="1px"
+            android:background="#efefef" />
+        <!--item内容部分的容器-->
+        <LinearLayout
+            android:id="@+id/ll_root1"
+            android:layout_width="match_parent"
+            android:layout_height="80sp"
+            android:background="@color/white"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingBottom="10dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:paddingTop="10dp">
+            <!--item左边的Icon-->
+            <ImageView
+                android:id="@+id/iv_left_icon1"
+                android:layout_width="50sp"
+                android:layout_height="50sp"
+                android:src="@mipmap/clock"/>
+            <!--item中间部分的文字-->
+            <TextView
+                android:id="@+id/tv_text_content1"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="12sp"
+                android:layout_marginRight="12sp"
+                android:layout_weight="1"
+                android:gravity="center|left"
+                android:text="番茄时钟"
+                android:textSize="30sp" />
+            <Switch
+                android:id="@+id/switch_example1"
+                android:layout_width="70sp"
+                android:layout_height="70sp"
+                android:checked="true" />
+        </LinearLayout>
+        <!--item的下分割线-->
+        <View
+            android:id="@+id/divider_bottom1"
+            android:layout_width="fill_parent"
+            android:layout_height="1px"
+            android:background="#efefef" />
+        <!-- TODO: item2 memorize -->
+        <!--item的上分割线-->
+        <View
+            android:id="@+id/divider_top2"
+            android:layout_width="fill_parent"
+            android:layout_height="1px"
+            android:background="#efefef" />
+        <!--item内容部分的容器-->
+        <LinearLayout
+            android:id="@+id/ll_root2"
+            android:layout_width="match_parent"
+            android:layout_height="80sp"
+            android:background="@color/white"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingBottom="10dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:paddingTop="10dp">
+            <!--item左边的Icon-->
+            <ImageView
+                android:id="@+id/iv_left_icon2"
+                android:layout_width="50sp"
+                android:layout_height="50sp"
+                android:src="@mipmap/memorize"/>
+            <!--item中间部分的文字-->
+            <TextView
+                android:id="@+id/tv_text_content2"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="12sp"
+                android:layout_marginRight="12sp"
+                android:layout_weight="1"
+                android:gravity="center|left"
+                android:text="背单词"
+                android:textSize="30sp" />
+            <Switch
+                android:id="@+id/switch_example2"
+                android:layout_width="70sp"
+                android:layout_height="70sp"
+                android:checked="true" />
+        </LinearLayout>
+        <!--item的下分割线-->
+        <View
+            android:id="@+id/divider_bottom2"
+            android:layout_width="fill_parent"
+            android:layout_height="1px"
+            android:background="#efefef" />
+        <!-- TODO: item3 note -->
+        <!--item的上分割线-->
+        <View
+            android:id="@+id/divider_top3"
+            android:layout_width="fill_parent"
+            android:layout_height="1px"
+            android:background="#efefef" />
+        <!--item内容部分的容器-->
+        <LinearLayout
+            android:id="@+id/ll_root3"
+            android:layout_width="match_parent"
+            android:layout_height="80sp"
+            android:background="@color/white"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingBottom="10dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:paddingTop="10dp">
+            <!--item左边的Icon-->
+            <ImageView
+                android:id="@+id/iv_left_icon3"
+                android:layout_width="50sp"
+                android:layout_height="50sp"
+                android:src="@mipmap/note" />
+
+            <!--item中间部分的文字-->
+            <TextView
+                android:id="@+id/tv_text_content3"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="12sp"
+                android:layout_marginRight="12sp"
+                android:layout_weight="1"
+                android:gravity="center|left"
+                android:text="笔记"
+                android:textSize="30sp" />
+            <Switch
+                android:id="@+id/switch_example3"
+                android:layout_width="70sp"
+                android:layout_height="70sp"
+                android:checked="true" />
+        </LinearLayout>
+        <!--item的下分割线-->
+        <View
+            android:id="@+id/divider_bottom3"
+            android:layout_width="fill_parent"
+            android:layout_height="1px"
+            android:background="#efefef" />
+    </LinearLayout>
+
+</FrameLayout>

@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FragmentHome">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <!-- TODO: countdown & textSwitcher -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+            <!-- TODO: CountDown -->
+            <LinearLayout
+                android:id="@+id/imageView"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:layout_above="@id/textSwitcher"
+                android:background="@drawable/countdown"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/tvCountDownText1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40sp"
+                    android:text="距离考研还有"
+                    android:textSize="30sp" />
+
+                <TextView
+                    android:id="@+id/tvCountDown"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50sp"
+                    android:paddingLeft="5sp"
+                    android:paddingRight="5sp"
+                    android:textSize="45sp" />
+
+                <TextView
+                    android:id="@+id/tvCountDownText2"
+                    android:layout_width="30sp"
+                    android:layout_height="40sp"
+                    android:text="天"
+                    android:textSize="30sp" />
+            </LinearLayout>
+            <TextSwitcher
+                android:id="@+id/textSwitcher"
+                android:layout_width="match_parent"
+                android:layout_height="0sp"
+                android:layout_weight="0.2"
+                android:layout_gravity="center"
+                android:layout_below="@id/imageView"
+                android:inAnimation="@android:anim/slide_in_left"
+                android:outAnimation="@android:anim/slide_out_right"/>
+        </LinearLayout>
+        <!-- TODO: function area -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="left"
+            android:layout_weight="1">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+                <!-- TODO: function1 -->
+                <LinearLayout
+                    android:id="@+id/ll_fun1"
+                    android:layout_width="100sp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:paddingBottom="10sp"
+                    android:paddingLeft="20sp"
+                    android:paddingRight="20sp"
+                    android:paddingTop="10sp">
+                    <ImageView
+                        android:id="@+id/iv_fun1"
+                        android:layout_width="70sp"
+                        android:layout_height="0sp"
+                        android:layout_weight="3"
+                        android:src="@mipmap/clock"/>
+
+                    <TextView
+                        android:id="@+id/tv_fun1"
+                        android:layout_width="70sp"
+                        android:layout_height="0sp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:textSize="14sp"
+                        android:text="番茄时钟"/>
+                </LinearLayout>
+                <!-- TODO: function2 -->
+                <LinearLayout
+                    android:id="@+id/ll_fun2"
+                    android:layout_width="100sp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:paddingBottom="10sp"
+                    android:paddingLeft="20sp"
+                    android:paddingRight="20sp"
+                    android:paddingTop="10sp">
+                    <ImageView
+                        android:id="@+id/iv_fun2"
+                        android:layout_width="70sp"
+                        android:layout_height="0sp"
+                        android:layout_weight="3"
+                        android:src="@mipmap/memorize"/>
+
+                    <TextView
+                        android:id="@+id/tv_fun2"
+                        android:layout_width="70sp"
+                        android:layout_height="0sp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:textSize="14sp"
+                        android:text="背单词"/>
+                </LinearLayout>
+                <!-- TODO: function3 -->
+                <LinearLayout
+                    android:id="@+id/ll_fun3"
+                    android:layout_width="100sp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:paddingBottom="10sp"
+                    android:paddingLeft="20sp"
+                    android:paddingRight="20sp"
+                    android:paddingTop="10sp">
+                    <ImageView
+                        android:id="@+id/iv_fun3"
+                        android:layout_width="70sp"
+                        android:layout_height="0sp"
+                        android:layout_weight="3"
+                        android:src="@mipmap/note" />
+
+                    <TextView
+                        android:id="@+id/tv_fun3"
+                        android:layout_width="70sp"
+                        android:layout_height="0sp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:textSize="14sp"
+                        android:text="笔记"/>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"></LinearLayout>
+            <LinearLayout
+                android:id="@+id/ll_plus"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:layout_weight="1">
+                <ImageView
+                    android:id="@+id/iv_manage"
+                    android:layout_width="100sp"
+                    android:layout_height="100sp"
+                    android:src="@mipmap/plus"
+                    />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>
